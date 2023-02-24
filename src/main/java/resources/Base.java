@@ -1,12 +1,9 @@
 package resources;
 
 import java.io.FileInputStream;
-
-
 import java.io.IOException;
 import java.time.Duration;
 import java.util.Properties;
-
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
@@ -19,28 +16,28 @@ public class Base {
 	public static WebDriver driver;
 	public Properties prop;
 	public WebDriver initilizeDriver() throws IOException {
-		
+
 //		String browserName = "firefox"; --->Hard coding
-		
-	
+
+
 		prop = new Properties();
 		String propsPath = System.getProperty("user.dir")+"\\src\\main\\java\\resources\\data.properties";
 		FileInputStream fis = new FileInputStream(propsPath);
 		prop.load(fis);
-		
+
 
 		String browserName = prop.getProperty("browser");
-		
+
 		if(browserName.equalsIgnoreCase("chrome")) {
-			
+
 			WebDriverManager.chromedriver().setup();
 			 driver = new ChromeDriver();
 		}else if(browserName.equalsIgnoreCase("firefox")) {
-			
+
 			WebDriverManager.firefoxdriver().setup();
 			 driver = new FirefoxDriver();
 		}else if(browserName.equalsIgnoreCase("IE")) {
-			
+
 			WebDriverManager.iedriver().setup();
 			 driver = new InternetExplorerDriver();
 		}
