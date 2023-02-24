@@ -33,6 +33,9 @@ public class LoginPage {
 	public WebElement loginButton() {
 		return loginButton;
 	}
-	
-
+	@FindBy(linkText="Logout")
+	WebElement logOut;
+	public void logOut() {
+		logOut.click();
+	}
 }
