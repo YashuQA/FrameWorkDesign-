@@ -1,10 +1,15 @@
 package resources;
 
+import java.io.File;
+
 import java.io.FileInputStream;
 import java.io.IOException;
 import java.time.Duration;
 import java.util.Properties;
 
+import org.apache.commons.io.FileUtils;
+import org.openqa.selenium.OutputType;
+import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
@@ -13,9 +18,10 @@ import org.openqa.selenium.ie.InternetExplorerDriver;
 import io.github.bonigarcia.wdm.WebDriverManager;
 
 public class Base {
-	public static WebDriver driver;
+	public  WebDriver driver;
 	public Properties prop;
 	public WebDriver initilizeDriver() throws IOException {
+
 
 //		String browserName = "firefox"; --->Hard coding
 
@@ -46,4 +52,11 @@ public class Base {
 		return driver;
 	}
 //public static void main(String[] args) {}
+	
+	public void takeScreenshot(String testName, WebDriver driver) throws IOException {
+		File sourceFile = ((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE);
+		String desinationFilePath = System.getProperty("user.dir")+"\\screenshots\\"+testName+".png";
+		FileUtils.copyFile(sourceFile, new File(desinationFilePath));
+	}
 }
+

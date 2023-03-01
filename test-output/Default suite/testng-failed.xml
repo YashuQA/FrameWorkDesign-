@@ -3,12 +3,11 @@
 <suite parallel="none" name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test parallel="none" name="Default test(failed)">
     <classes>
-      <class name="tests.RegisterTest">
+      <class name="tests.DemoTest">
         <methods>
-          <include name="register"/>
-          <include name="openApplication"/>
+          <include name="demo"/>
         </methods>
-      </class> <!-- tests.RegisterTest -->
+      </class> <!-- tests.DemoTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

@@ -17,7 +17,7 @@ import resources.Base;
 
 public class RegisterTest extends Base {
 	
-	WebDriver driver;
+	public WebDriver driver;
 	
 	@BeforeMethod
 	public void openApplication() throws IOException {

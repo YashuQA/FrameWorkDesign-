@@ -18,7 +18,7 @@ import pageobjects.LoginPage;
 import resources.Base;
 
 public class LoginTest extends Base {
-	WebDriver driver;
+	public WebDriver driver;
 	LoginPage loginPage;
 	Logger log;
 //	public LoginTest() {
