@@ -12,13 +12,15 @@ import com.aventstack.extentreports.ExtentTest;
 import com.aventstack.extentreports.Status;
 
 import resources.Base;
-import utilities.ExtentReporter;
+import utilities.EReports;
+
 
 public class Listeners extends Base implements ITestListener {
 
 	WebDriver driver = null;
-	ExtentReports extentReport = ExtentReporter.getExtentReport();
+	ExtentReports extentReport = EReports.getExtentReport();
 	ExtentTest extentTest;
+	ThreadLocal<ExtentTest> extentTestThread = new ThreadLocal<ExtentTest>();
 
 	@Override
 	public void onTestStart(ITestResult result) {
@@ -27,6 +29,8 @@ public class Listeners extends Base implements ITestListener {
 
 		extentTest=extentReport.createTest(testName+ " execution started");
 		
+		extentTestThread.set(extentTest);
+		
 	}
 
 	@Override
@@ -34,14 +38,20 @@ public class Listeners extends Base implements ITestListener {
 
 		String testName = result.getName();
 		
-		extentTest.log(Status.PASS, testName+ " got Passed!");
+		//extentTest.log(Status.PASS, testName+ " got Passed!");
+		
+		extentTestThread.get().log(Status.PASS, testName+ " got Passed!");
 	}
 
 	@Override
 	public void onTestFailure(ITestResult result) {
 		
 		String testMethodName = result.getName();
-		extentTest.fail(result.getThrowable()); 
+//		extentTest.fail(result.getThrowable()); 
+		
+		extentTestThread.get().fail(result.getThrowable()); 
+		
+		
 		  // WebDriver driver=null; 
 		//getting the test method name 
 		String testName =
