@@ -2,16 +2,16 @@
 <testng-results total="2" passed="1" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-03-01T10:05:22Z" name="Suite" finished-at="2023-03-01T10:05:42Z" duration-ms="19942">
+  <suite started-at="2023-03-02T06:26:26Z" name="Suite" finished-at="2023-03-02T06:26:40Z" duration-ms="13791">
     <groups>
     </groups>
-    <test started-at="2023-03-01T10:05:22Z" name="DemoTest" finished-at="2023-03-01T10:05:42Z" duration-ms="19942">
+    <test started-at="2023-03-02T06:26:26Z" name="DemoTest" finished-at="2023-03-02T06:26:40Z" duration-ms="13791">
       <class name="tests.DemoTest">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:tests.DemoTest@63f259c3]" started-at="2023-03-01T15:35:22Z" name="setUp" finished-at="2023-03-01T15:35:33Z" duration-ms="11101" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:tests.DemoTest@63f259c3]" started-at="2023-03-02T11:56:26Z" name="setUp" finished-at="2023-03-02T11:56:34Z" duration-ms="8063" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="demo()[pri:0, instance:tests.DemoTest@63f259c3]" started-at="2023-03-01T15:35:33Z" name="demo" finished-at="2023-03-01T15:35:33Z" duration-ms="13" status="FAIL">
+        <test-method signature="demo()[pri:0, instance:tests.DemoTest@63f259c3]" started-at="2023-03-02T11:56:34Z" name="demo" finished-at="2023-03-02T11:56:34Z" duration-ms="8" status="FAIL">
           <exception class="java.lang.AssertionError">
             <message>
               <![CDATA[expected [true] but found [false]]]>
@@ -53,19 +53,19 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- demo -->
-        <test-method is-config="true" signature="closure()[pri:0, instance:tests.DemoTest@63f259c3]" started-at="2023-03-01T15:35:33Z" name="closure" finished-at="2023-03-01T15:35:35Z" duration-ms="1413" status="PASS">
+        <test-method is-config="true" signature="closure()[pri:0, instance:tests.DemoTest@63f259c3]" started-at="2023-03-02T11:56:35Z" name="closure" finished-at="2023-03-02T11:56:36Z" duration-ms="938" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closure -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:tests.DemoTest@63f259c3]" started-at="2023-03-01T15:35:35Z" name="setUp" finished-at="2023-03-01T15:35:40Z" duration-ms="5613" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:tests.DemoTest@63f259c3]" started-at="2023-03-02T11:56:36Z" name="setUp" finished-at="2023-03-02T11:56:39Z" duration-ms="3751" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="testSuccess()[pri:0, instance:tests.DemoTest@63f259c3]" started-at="2023-03-01T15:35:40Z" name="testSuccess" finished-at="2023-03-01T15:35:40Z" duration-ms="2" status="PASS">
+        <test-method signature="testSuccess()[pri:0, instance:tests.DemoTest@63f259c3]" started-at="2023-03-02T11:56:39Z" name="testSuccess" finished-at="2023-03-02T11:56:39Z" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testSuccess -->
-        <test-method is-config="true" signature="closure()[pri:0, instance:tests.DemoTest@63f259c3]" started-at="2023-03-01T15:35:40Z" name="closure" finished-at="2023-03-01T15:35:42Z" duration-ms="1209" status="PASS">
+        <test-method is-config="true" signature="closure()[pri:0, instance:tests.DemoTest@63f259c3]" started-at="2023-03-02T11:56:39Z" name="closure" finished-at="2023-03-02T11:56:40Z" duration-ms="839" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closure -->

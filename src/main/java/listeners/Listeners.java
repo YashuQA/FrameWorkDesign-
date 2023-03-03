@@ -2,7 +2,6 @@ package listeners;
 
 import java.io.IOException;
 
-
 import org.openqa.selenium.WebDriver;
 import org.testng.ITestContext;
 import org.testng.ITestListener;
@@ -23,25 +22,7 @@ public class Listeners extends Base implements ITestListener {
 
 	@Override
 	public void onTestSuccess(ITestResult result) {
-//		
-//		WebDriver driver=null;
-		//getting the test method name 
-		String testName = result.getName();
-		
-		try {
-			//we need the driver of the test which is failing. to get that driver we are writing below line of code		
-			driver = (WebDriver)result.getTestClass().getRealClass().getDeclaredField("driver").get(result.getInstance());
-		} catch (Exception e) {
-		
-			e.printStackTrace();
-		}
-		//takeScreenshot method getting from base class
-		try {
-			takeScreenshot(testName, driver);
-		} catch (IOException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
-		}
+
 		
 	}
 
