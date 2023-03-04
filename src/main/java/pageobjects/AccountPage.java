@@ -9,6 +9,12 @@ public class AccountPage {
 
 	WebDriver driver;
 
+
+	//encapsulating web element by making them "private"
+	@FindBy(linkText="Edit your account information")
+	private WebElement editAccountInformationLink;  
+	
+	
 	public AccountPage(WebDriver driver) {
 
 		this.driver = driver;
@@ -16,8 +22,6 @@ public class AccountPage {
 
 	}
 
-	@FindBy(linkText="Edit your account information")
-	WebElement editAccountInformationLink;
 
 	public WebElement editAccountInformationLink() {
 

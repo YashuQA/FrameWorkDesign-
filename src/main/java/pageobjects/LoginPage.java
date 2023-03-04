@@ -9,32 +9,40 @@ public class LoginPage {
 
 	WebDriver driver;
 
+	//encapsulating web element by making them "private"
+	@FindBy(id="input-email")
+	private WebElement emailAddress;
+
+	@FindBy(id="input-password")
+	private WebElement password;
+
+	@FindBy(css="input[value='Login']")
+	private WebElement loginButton;
+
+	@FindBy(linkText="Logout")
+	private WebElement logOut;
+	
 	public LoginPage(WebDriver driver) {
 
 		this.driver = driver;
 		PageFactory.initElements(driver, this);
 	}
 
-	@FindBy(id="input-email")
-	WebElement emailAddress;
 
 	public WebElement emailAddress() {
 		return emailAddress;
 	}
-	@FindBy(id="input-password")
-	WebElement password;
+
 
 	public WebElement password() {
 		return password;
 	}
-	@FindBy(css="input[value='Login']")
-	WebElement loginButton;
+
 
 	public WebElement loginButton() {
 		return loginButton;
 	}
-	@FindBy(linkText="Logout")
-	WebElement logOut;
+
 	public void logOut() {
 		logOut.click();
 	}

@@ -8,6 +8,13 @@ import org.openqa.selenium.support.PageFactory;
 public class LandingPage {
 
 	WebDriver driver;
+	
+	//encapsulating web element by making them "private"
+	@FindBy(xpath="//a[@title='My Account']")
+	private WebElement myAccountDropDown;
+	
+	@FindBy(linkText = "Login")
+	private WebElement loginOptions;
 
 	//this constructor will receive WebDriver from outside.
 	public LandingPage(WebDriver driver) {
@@ -17,8 +24,6 @@ public class LandingPage {
 		PageFactory.initElements(driver, this);
 	}
 
-	@FindBy(xpath="//a[@title='My Account']")
-	WebElement myAccountDropDown;
 
 	//method to return the web element
 
@@ -27,8 +32,6 @@ public class LandingPage {
 		return myAccountDropDown;
 	}
 
-	@FindBy(linkText = "Login")
-	WebElement loginOptions;
 
 	public WebElement loginOptions() {
 
