@@ -67,7 +67,8 @@ public class Listeners extends Base implements ITestListener {
 			} // takeScreenshot method getting from base class 
 			
 			try {
-			takeScreenshot(testName, driver);
+			String screenShotFilePath = takeScreenshot(testName, driver);
+			extentTestThread.get().addScreenCaptureFromPath(screenShotFilePath, testName);
 		}catch(IOException e)
 		{
 			 e.printStackTrace();

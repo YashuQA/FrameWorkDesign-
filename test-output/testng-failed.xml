@@ -6,6 +6,12 @@
   </listeners>
   <test parallel="none" name="DemoTest(failed)">
     <classes>
+      <class name="tests.LoginTest">
+        <methods>
+          <include name="openApplication"/>
+          <include name="closure"/>
+        </methods>
+      </class> <!-- tests.LoginTest -->
       <class name="tests.DemoTest">
         <methods>
           <include name="setUp"/>
@@ -13,12 +19,6 @@
           <include name="closure"/>
         </methods>
       </class> <!-- tests.DemoTest -->
-      <class name="tests.LoginTest">
-        <methods>
-          <include name="openApplication"/>
-          <include name="closure"/>
-        </methods>
-      </class> <!-- tests.LoginTest -->
       <class name="tests.RegisterTest">
         <methods>
           <include name="closure"/>

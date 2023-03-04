@@ -2,16 +2,16 @@
 <testng-results total="5" passed="4" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-03-03T10:32:34Z" name="Suite" finished-at="2023-03-03T10:33:14Z" duration-ms="39876">
+  <suite started-at="2023-03-04T05:24:48Z" name="Suite" finished-at="2023-03-04T05:25:24Z" duration-ms="35863">
     <groups>
     </groups>
-    <test started-at="2023-03-03T10:32:34Z" name="DemoTest" finished-at="2023-03-03T10:32:49Z" duration-ms="15453">
+    <test started-at="2023-03-04T05:24:48Z" name="DemoTest" finished-at="2023-03-04T05:25:03Z" duration-ms="14297">
       <class name="tests.DemoTest">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:tests.DemoTest@61884cb1]" started-at="2023-03-03T16:02:34Z" name="setUp" finished-at="2023-03-03T16:02:42Z" duration-ms="8132" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:tests.DemoTest@590c73d3]" started-at="2023-03-04T10:54:48Z" name="setUp" finished-at="2023-03-04T10:54:57Z" duration-ms="8632" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="demo()[pri:0, instance:tests.DemoTest@61884cb1]" started-at="2023-03-03T16:02:42Z" name="demo" finished-at="2023-03-03T16:02:42Z" duration-ms="15" status="FAIL">
+        <test-method signature="demo()[pri:0, instance:tests.DemoTest@590c73d3]" started-at="2023-03-04T10:54:57Z" name="demo" finished-at="2023-03-04T10:54:57Z" duration-ms="17" status="FAIL">
           <exception class="java.lang.AssertionError">
             <message>
               <![CDATA[expected [true] but found [false]]]>
@@ -53,31 +53,31 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- demo -->
-        <test-method is-config="true" signature="closure()[pri:0, instance:tests.DemoTest@61884cb1]" started-at="2023-03-03T16:02:42Z" name="closure" finished-at="2023-03-03T16:02:43Z" duration-ms="1093" status="PASS">
+        <test-method is-config="true" signature="closure()[pri:0, instance:tests.DemoTest@590c73d3]" started-at="2023-03-04T10:54:57Z" name="closure" finished-at="2023-03-04T10:54:58Z" duration-ms="894" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closure -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:tests.DemoTest@61884cb1]" started-at="2023-03-03T16:02:43Z" name="setUp" finished-at="2023-03-03T16:02:47Z" duration-ms="3894" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:tests.DemoTest@590c73d3]" started-at="2023-03-04T10:54:58Z" name="setUp" finished-at="2023-03-04T10:55:02Z" duration-ms="3686" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="testSuccess()[pri:0, instance:tests.DemoTest@61884cb1]" started-at="2023-03-03T16:02:47Z" name="testSuccess" finished-at="2023-03-03T16:02:47Z" duration-ms="1" status="PASS">
+        <test-method signature="testSuccess()[pri:0, instance:tests.DemoTest@590c73d3]" started-at="2023-03-04T10:55:02Z" name="testSuccess" finished-at="2023-03-04T10:55:02Z" duration-ms="2" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testSuccess -->
-        <test-method is-config="true" signature="closure()[pri:0, instance:tests.DemoTest@61884cb1]" started-at="2023-03-03T16:02:47Z" name="closure" finished-at="2023-03-03T16:02:49Z" duration-ms="2095" status="PASS">
+        <test-method is-config="true" signature="closure()[pri:0, instance:tests.DemoTest@590c73d3]" started-at="2023-03-04T10:55:02Z" name="closure" finished-at="2023-03-04T10:55:03Z" duration-ms="870" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closure -->
       </class> <!-- tests.DemoTest -->
     </test> <!-- DemoTest -->
-    <test started-at="2023-03-03T10:32:49Z" name="RegisterTest" finished-at="2023-03-03T10:33:03Z" duration-ms="13328">
+    <test started-at="2023-03-04T05:25:03Z" name="RegisterTest" finished-at="2023-03-04T05:25:15Z" duration-ms="12311">
       <class name="tests.RegisterTest">
-        <test-method is-config="true" signature="openApplication()[pri:0, instance:tests.RegisterTest@7be58f16]" started-at="2023-03-03T16:02:49Z" name="openApplication" finished-at="2023-03-03T16:02:53Z" duration-ms="4003" status="PASS">
+        <test-method is-config="true" signature="openApplication()[pri:0, instance:tests.RegisterTest@3d484181]" started-at="2023-03-04T10:55:03Z" name="openApplication" finished-at="2023-03-04T10:55:07Z" duration-ms="3659" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- openApplication -->
-        <test-method signature="register(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:tests.RegisterTest@7be58f16]" started-at="2023-03-03T16:02:53Z" name="register" data-provider="dataSetter" finished-at="2023-03-03T16:02:55Z" duration-ms="1848" status="PASS">
+        <test-method signature="register(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:tests.RegisterTest@3d484181]" started-at="2023-03-04T10:55:07Z" name="register" data-provider="dataSetter" finished-at="2023-03-04T10:55:08Z" duration-ms="1709" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -113,15 +113,15 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- register -->
-        <test-method is-config="true" signature="closure()[pri:0, instance:tests.RegisterTest@7be58f16]" started-at="2023-03-03T16:02:55Z" name="closure" finished-at="2023-03-03T16:02:56Z" duration-ms="964" status="PASS">
+        <test-method is-config="true" signature="closure()[pri:0, instance:tests.RegisterTest@3d484181]" started-at="2023-03-04T10:55:08Z" name="closure" finished-at="2023-03-04T10:55:09Z" duration-ms="897" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closure -->
-        <test-method is-config="true" signature="openApplication()[pri:0, instance:tests.RegisterTest@7be58f16]" started-at="2023-03-03T16:02:56Z" name="openApplication" finished-at="2023-03-03T16:03:00Z" duration-ms="3830" status="PASS">
+        <test-method is-config="true" signature="openApplication()[pri:0, instance:tests.RegisterTest@3d484181]" started-at="2023-03-04T10:55:09Z" name="openApplication" finished-at="2023-03-04T10:55:13Z" duration-ms="3503" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- openApplication -->
-        <test-method signature="register(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:tests.RegisterTest@7be58f16]" started-at="2023-03-03T16:03:00Z" name="register" data-provider="dataSetter" finished-at="2023-03-03T16:03:02Z" duration-ms="1700" status="PASS">
+        <test-method signature="register(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:tests.RegisterTest@3d484181]" started-at="2023-03-04T10:55:13Z" name="register" data-provider="dataSetter" finished-at="2023-03-04T10:55:14Z" duration-ms="1646" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -157,23 +157,23 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- register -->
-        <test-method is-config="true" signature="closure()[pri:0, instance:tests.RegisterTest@7be58f16]" started-at="2023-03-03T16:03:02Z" name="closure" finished-at="2023-03-03T16:03:03Z" duration-ms="974" status="PASS">
+        <test-method is-config="true" signature="closure()[pri:0, instance:tests.RegisterTest@3d484181]" started-at="2023-03-04T10:55:14Z" name="closure" finished-at="2023-03-04T10:55:15Z" duration-ms="887" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closure -->
       </class> <!-- tests.RegisterTest -->
     </test> <!-- RegisterTest -->
-    <test started-at="2023-03-03T10:33:03Z" name="LoginTest" finished-at="2023-03-03T10:33:14Z" duration-ms="10706">
+    <test started-at="2023-03-04T05:25:15Z" name="LoginTest" finished-at="2023-03-04T05:25:24Z" duration-ms="8884">
       <class name="tests.LoginTest">
-        <test-method is-config="true" signature="openApplication()[pri:0, instance:tests.LoginTest@207ea13]" started-at="2023-03-03T16:03:03Z" name="openApplication" finished-at="2023-03-03T16:03:08Z" duration-ms="5556" status="PASS">
+        <test-method is-config="true" signature="openApplication()[pri:0, instance:tests.LoginTest@1b065145]" started-at="2023-03-04T10:55:15Z" name="openApplication" finished-at="2023-03-04T10:55:19Z" duration-ms="3889" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- openApplication -->
-        <test-method signature="Login()[pri:0, instance:tests.LoginTest@207ea13]" started-at="2023-03-03T16:03:08Z" name="Login" finished-at="2023-03-03T16:03:12Z" duration-ms="4086" status="PASS">
+        <test-method signature="Login()[pri:0, instance:tests.LoginTest@1b065145]" started-at="2023-03-04T10:55:19Z" name="Login" finished-at="2023-03-04T10:55:23Z" duration-ms="4051" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Login -->
-        <test-method is-config="true" signature="closure()[pri:0, instance:tests.LoginTest@207ea13]" started-at="2023-03-03T16:03:12Z" name="closure" finished-at="2023-03-03T16:03:14Z" duration-ms="1063" status="PASS">
+        <test-method is-config="true" signature="closure()[pri:0, instance:tests.LoginTest@1b065145]" started-at="2023-03-04T10:55:23Z" name="closure" finished-at="2023-03-04T10:55:24Z" duration-ms="941" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closure -->

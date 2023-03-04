@@ -53,10 +53,12 @@ public class Base {
 	}
 //public static void main(String[] args) {}
 	
-	public void takeScreenshot(String testName, WebDriver driver) throws IOException {
+	public String takeScreenshot(String testName, WebDriver driver) throws IOException {
 		File sourceFile = ((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE);
 		String desinationFilePath = System.getProperty("user.dir")+"\\screenshots\\"+testName+".png";
 		FileUtils.copyFile(sourceFile, new File(desinationFilePath));
+		
+		return desinationFilePath;
 	}
 }
 
