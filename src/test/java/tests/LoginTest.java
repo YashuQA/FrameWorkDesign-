@@ -61,16 +61,7 @@ public class LoginTest extends Base {
 
 		AccountPage accountPage = new AccountPage(driver);
 		Assert.assertTrue(accountPage.editAccountInformationLink().isDisplayed());
-//		log.info("Assertion is Checked for display");
-
-
-		/*
-		 * String actualStatus = null ;
-		 *
-		 * try { if(accountPage.editAccountInformationLink().isDisplayed()) actualStatus
-		 * = "Successful"; } catch (Exception e) { actualStatus = "Failure"; }
-		 * Assert.assertEquals(actualStatus, expectedStatus);
-		 */
+		log.info("Assertion is Checked for display");
 
 	}
 

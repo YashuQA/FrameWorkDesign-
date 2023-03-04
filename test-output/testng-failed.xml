@@ -1,30 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite parallel="none" name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
-  <listeners>
-    <listener class-name="listeners.Listeners"/>
-  </listeners>
-  <test parallel="none" name="DemoTest(failed)">
+  <test parallel="none" name="Test(failed)">
     <classes>
-      <class name="tests.LoginTest">
+      <class name="runner.Runner">
         <methods>
-          <include name="openApplication"/>
-          <include name="closure"/>
+          <include name="runScenario" invocation-numbers="0"/>
+          <include name="tearDownClass"/>
+          <include name="setUpClass"/>
         </methods>
-      </class> <!-- tests.LoginTest -->
-      <class name="tests.DemoTest">
-        <methods>
-          <include name="setUp"/>
-          <include name="demo"/>
-          <include name="closure"/>
-        </methods>
-      </class> <!-- tests.DemoTest -->
-      <class name="tests.RegisterTest">
-        <methods>
-          <include name="closure"/>
-          <include name="openApplication"/>
-        </methods>
-      </class> <!-- tests.RegisterTest -->
+      </class> <!-- runner.Runner -->
     </classes>
-  </test> <!-- DemoTest(failed) -->
+  </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->

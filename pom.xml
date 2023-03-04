@@ -56,6 +56,16 @@
 			<artifactId>extentreports</artifactId>
 			<version>5.0.9</version>
 		</dependency>
+		<dependency>
+			<groupId>io.cucumber</groupId>
+			<artifactId>cucumber-java</artifactId>
+			<version>7.11.1</version>
+		</dependency>
+		<dependency>
+			<groupId>io.cucumber</groupId>
+			<artifactId>cucumber-testng</artifactId>
+			<version>7.11.1</version>
+		</dependency>
 
 	</dependencies>
 
@@ -89,7 +99,7 @@
 					<version>3.0.0-M9</version>
 					<configuration>
 						<suiteXmlFiles>
-							<suiteXmlFile>testng.xml</suiteXmlFile>
+							<suiteXmlFile>testng2.xml</suiteXmlFile>
 						</suiteXmlFiles>
 					</configuration>
 				</plugin>
