@@ -14,7 +14,7 @@ public class AccountPage {
 	@FindBy(linkText="Edit your account information")
 	private WebElement editAccountInformationLink;  
 	
-	
+	//this constructor will receive WebDriver from outside.
 	public AccountPage(WebDriver driver) {
 
 		this.driver = driver;
