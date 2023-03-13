@@ -1,7 +1,6 @@
 package resources;
 
 import java.io.File;
-
 import java.io.FileInputStream;
 import java.io.IOException;
 import java.time.Duration;
@@ -18,47 +17,52 @@ import org.openqa.selenium.ie.InternetExplorerDriver;
 import io.github.bonigarcia.wdm.WebDriverManager;
 
 public class Base {
-	public  WebDriver driver;
+	public WebDriver driver;
 	public Properties prop;
-	public WebDriver initilizeDriver() throws IOException {
-
-
-//		String browserName = "firefox"; --->Hard coding
-
-
-		prop = new Properties();
-		String propsPath = System.getProperty("user.dir")+"\\src\\main\\java\\resources\\data.properties";
-		FileInputStream fis = new FileInputStream(propsPath);
-		prop.load(fis);
-
-
-		String browserName = prop.getProperty("browser");
-
-		if(browserName.equalsIgnoreCase("chrome")) {
-
-			WebDriverManager.chromedriver().setup();
-			 driver = new ChromeDriver();
-		}else if(browserName.equalsIgnoreCase("firefox")) {
-
-			WebDriverManager.firefoxdriver().setup();
-			 driver = new FirefoxDriver();
-		}else if(browserName.equalsIgnoreCase("IE")) {
-
-			WebDriverManager.iedriver().setup();
-			 driver = new InternetExplorerDriver();
-		}
-		driver.manage().window().maximize();
-		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(3000));
-		return driver;
-	}
-//public static void main(String[] args) {}
 	
-	public String takeScreenshot(String testName, WebDriver driver) throws IOException {
-		File sourceFile = ((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE);
-		String desinationFilePath = System.getProperty("user.dir")+"\\screenshots\\"+testName+".png";
-		FileUtils.copyFile(sourceFile, new File(desinationFilePath));
+	
 		
-		return desinationFilePath;
+		public WebDriver initilizeDriver() throws IOException {
+
+
+//			String browserName = "firefox"; --->Hard coding
+
+
+			prop = new Properties();
+			String propsPath = System.getProperty("user.dir")+"\\src\\main\\java\\resources\\data.properties";
+			FileInputStream fis = new FileInputStream(propsPath);
+			prop.load(fis);
+
+
+			String  browserName = prop.getProperty("browser");
+
+			if(browserName.equalsIgnoreCase("chrome")) {
+
+				WebDriverManager.chromedriver().setup();
+				 driver = new ChromeDriver();
+			}else if(browserName.equalsIgnoreCase("firefox")) {
+
+				WebDriverManager.firefoxdriver().setup();
+				 driver = new FirefoxDriver();
+			}else if(browserName.equalsIgnoreCase("IE")) {
+
+				WebDriverManager.iedriver().setup();
+				 driver = new InternetExplorerDriver();
+			}
+			driver.manage().window().maximize();
+			driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(3000));
+			return driver;
+		}
+	//public static void main(String[] args) {}
+		
+		public String takeScreenshot(String testName, WebDriver driver) throws IOException {
+			File sourceFile = ((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE);
+			String desinationFilePath = System.getProperty("user.dir")+"\\screenshots\\"+testName+".png";
+			FileUtils.copyFile(sourceFile, new File(desinationFilePath));
+			
+			return desinationFilePath;
+		}
+
 	}
-}
+
 
